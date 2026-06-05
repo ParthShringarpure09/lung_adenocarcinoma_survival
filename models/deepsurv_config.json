@@ -1,0 +1,12 @@
+{
+  "input_dim": 1000,
+  "hidden_dims": [
+    64,
+    32
+  ],
+  "dropout": 0.5,
+  "cv_cindex": 0.7122080880158425,
+  "cv_std": 0.06797587523213912,
+  "n_patients": 478,
+  "n_genes": 1000
+}

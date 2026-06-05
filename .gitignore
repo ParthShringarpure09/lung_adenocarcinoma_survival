@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data (raw data should never go to GitHub — too large)
+data/raw/
+data/external/
+
+# Models (large binary files)
+#models/
+
+# OS
+.DS_Store
+Thumbs.db

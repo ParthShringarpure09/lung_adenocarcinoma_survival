@@ -1,0 +1,20 @@
+{
+  "model": "Cox-Lasso Expression",
+  "best_alpha": 0.02212216291070448,
+  "genes_kept": 72,
+  "train_cindex": 0.913514104526569,
+  "val_cindex": 0.7315270935960592,
+  "test_cindex": 0.6492537313432836,
+  "top_genes": [
+    "NCAM2",
+    "PKHD1L1",
+    "HOXB9",
+    "CNTN3",
+    "KCNA6",
+    "EPGN",
+    "ZNF257",
+    "ADAMTS1",
+    "WFDC3",
+    "HIST1H3G"
+  ]
+}
