@@ -1,0 +1,2 @@
+model,features,train_cindex,val_cindex,test_cindex
+Cox-Lasso Expression,72 genes (from 1000),0.913514104526569,0.7315270935960592,0.6492537313432836
