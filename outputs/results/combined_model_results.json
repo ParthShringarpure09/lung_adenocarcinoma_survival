@@ -1,0 +1,14 @@
+{
+  "model": "DeepSurv Combined (Clinical + Expression)",
+  "features": "5 clinical + 1000 genes = 1005 total",
+  "fold_cindices": [
+    0.6431372549019608,
+    0.7702539298669892,
+    0.656084656084656,
+    0.7019562715765247,
+    0.639344262295082
+  ],
+  "mean_cindex": 0.6821552749450426,
+  "std_cindex": 0.049372701620667155,
+  "finding": "Combined model underperforms expression-only DeepSurv. Gene expression already encodes clinical stage information."
+}
