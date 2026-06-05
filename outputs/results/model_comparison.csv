@@ -1,0 +1,4 @@
+model,features,c_index,std
+Cox Clinical,"age, stage, gender",0.7001,
+Cox-Lasso Expression,72 genes,0.6493,
+DeepSurv 5-fold CV,1000 genes,0.7122080880158425,0.06797587523213912
