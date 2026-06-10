@@ -5,8 +5,8 @@
     32
   ],
   "dropout": 0.5,
-  "cv_cindex": 0.569,
-  "cv_std": 0.058,
+  "cv_cindex": 0.5693,
+  "cv_std": 0.0575,
   "n_patients": 478,
   "n_genes": 1000
 }
