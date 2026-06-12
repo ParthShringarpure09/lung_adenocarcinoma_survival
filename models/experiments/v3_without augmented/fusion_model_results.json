@@ -1,0 +1,23 @@
+{
+  "model": "FusionModelV3",
+  "streams": [
+    "expression",
+    "dysregulation",
+    "immune",
+    "clinical"
+  ],
+  "expr_genes": 100,
+  "dysreg_genes": 50,
+  "immune_features": 22,
+  "clinical_features": 5,
+  "cv_cindex_mean": 0.653,
+  "cv_cindex_std": 0.035,
+  "cv_strategy": "StratifiedKFold_5fold",
+  "fold_cindices": [
+    0.5994,
+    0.664,
+    0.6543,
+    0.7084,
+    0.6391
+  ]
+}

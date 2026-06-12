@@ -1,0 +1,23 @@
+{
+  "model": "FusionModelV3",
+  "gene_selection": "univariate Cox p-value",
+  "cv_strategy": "StratifiedKFold_5fold",
+  "augmentation": "Gaussian noise=0.05",
+  "expr_genes": 30,
+  "dysreg_genes": 20,
+  "cv_cindex_mean": 0.669,
+  "cv_cindex_std": 0.074,
+  "fold_cindices": [
+    0.6652,
+    0.6534,
+    0.5448,
+    0.7177,
+    0.7657
+  ],
+  "attention_weights": {
+    "Expression": 0.2758,
+    "Dysregulation": 0.1461,
+    "Immune": 0.3733,
+    "Clinical": 0.2049
+  }
+}

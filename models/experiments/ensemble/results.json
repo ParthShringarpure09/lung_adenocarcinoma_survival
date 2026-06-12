@@ -1,0 +1,37 @@
+{
+  "model": "Ensemble XGBoost + FusionModelV3",
+  "xgb_params": {
+    "n_estimators": 200,
+    "learning_rate": 0.05,
+    "max_depth": 2,
+    "subsample": 0.8
+  },
+  "ensemble_weights": {
+    "xgb": 0.5,
+    "fusion": 0.5
+  },
+  "cv_strategy": "StratifiedKFold_5fold",
+  "features": {
+    "expression": 50,
+    "dysregulation": 30,
+    "immune": 22,
+    "clinical": 5,
+    "total": 107
+  },
+  "cv_cindex_mean": 0.694,
+  "cv_cindex_std": 0.072,
+  "fold_cindices": [
+    0.6383,
+    0.7689,
+    0.6088,
+    0.6658,
+    0.7895
+  ],
+  "comparison": {
+    "Cox Clinical": 0.7,
+    "Ensemble": 0.694,
+    "XGBoost": 0.689,
+    "Fusion lung pretrain": 0.659,
+    "Fusion V3 stable": 0.655
+  }
+}

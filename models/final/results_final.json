@@ -1,0 +1,53 @@
+{
+  "model": "Weighted Ensemble: XGBoost(0.7) + FusionModelV3(0.3)",
+  "cv_strategy": "StratifiedKFold_5fold",
+  "xgb_weight": 0.7,
+  "fusion_weight": 0.3,
+  "xgb_params": {
+    "n_estimators": 200,
+    "learning_rate": 0.05,
+    "max_depth": 2,
+    "subsample": 0.8
+  },
+  "features": {
+    "expression_genes": 50,
+    "dysregulation_genes": 30,
+    "immune_features": 22,
+    "clinical_features": 5,
+    "total": 107
+  },
+  "cv_cindex_mean": 0.711,
+  "cv_cindex_std": 0.077,
+  "fold_cindices_ensemble": [
+    0.6413,
+    0.7331,
+    0.6003,
+    0.7537,
+    0.8145
+  ],
+  "fold_cindices_xgb": [
+    0.6353,
+    0.7835,
+    0.5832,
+    0.6578,
+    0.7845
+  ],
+  "fold_cindices_fusion": [
+    0.6786,
+    0.6202,
+    0.5861,
+    0.7324,
+    0.8183
+  ],
+  "comparison": {
+    "Cox Clinical baseline": 0.7,
+    "Weighted Ensemble": 0.711,
+    "XGBoost alone": 0.689,
+    "Fusion lung pretrain": 0.659,
+    "Fusion V3 stable": 0.655,
+    "Cox-Lasso Expression": 0.649,
+    "DeepSurv Expression": 0.569,
+    "Cox-Lasso Dysregulation": 0.559,
+    "Cox-Lasso Immune": 0.541
+  }
+}
