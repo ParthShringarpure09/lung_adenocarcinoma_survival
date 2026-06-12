@@ -2,27 +2,27 @@
   "model": "Cox-Lasso Immune (DIY CIBERSORT)",
   "n_patients": 478,
   "n_cell_types": 22,
-  "cv_cindex_mean": 0.535,
-  "cv_cindex_std": 0.063,
+  "cv_cindex_mean": 0.541,
+  "cv_cindex_std": 0.042,
   "fold_cindices": [
-    0.6013,
-    0.5115,
-    0.4938,
-    0.6157,
-    0.4545
+    0.5804,
+    0.5998,
+    0.5256,
+    0.4994,
+    0.4978
   ],
   "fold_alphas": [
     0.0012,
+    0.001,
     0.0037,
-    0.001,
-    0.001,
-    0.001
+    0.0012,
+    0.0012
   ],
   "fold_cells_kept": [
-    21,
+    20,
+    20,
     18,
-    21,
     19,
-    19
+    20
   ]
 }
