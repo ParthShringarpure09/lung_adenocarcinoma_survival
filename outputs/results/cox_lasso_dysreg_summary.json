@@ -1,0 +1,28 @@
+{
+  "model": "Cox-Lasso Dysregulation",
+  "n_patients": 478,
+  "n_genes_input": 819,
+  "cv_cindex_mean": 0.559,
+  "cv_cindex_std": 0.057,
+  "fold_cindices": [
+    0.5346,
+    0.6723,
+    0.5238,
+    0.5455,
+    0.5201
+  ],
+  "fold_alphas": [
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1
+  ],
+  "fold_genes_kept": [
+    2,
+    2,
+    7,
+    1,
+    3
+  ]
+}
