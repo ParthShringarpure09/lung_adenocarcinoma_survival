@@ -1,0 +1,19 @@
+{
+  "cohort": "GSE72094",
+  "reference": "Shedden et al.",
+  "platform": "GPL15048 (Affymetrix Merck)",
+  "n_patients": 398,
+  "n_events": 113,
+  "event_rate": 0.284,
+  "c_index": 0.636,
+  "notes": [
+    "Dysregulation stream filled with zeros (no GTEx reference available)",
+    "3 genes missing from platform (CLEC18A, LOC441869, CMAH) filled with 0",
+    "LM22 gene coverage: 92.9% (508/547 genes)",
+    "Different microarray platform from training \u2014 domain shift expected"
+  ],
+  "comparison": {
+    "TCGA_training": 0.711,
+    "GSE72094_external": 0.636
+  }
+}
