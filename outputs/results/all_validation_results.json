@@ -1,0 +1,33 @@
+{
+  "training": {
+    "cohort": "TCGA-LUAD",
+    "n_patients": 478,
+    "n_events": 121,
+    "c_index": 0.702,
+    "method": "leakage-free 5-fold StratifiedKFold"
+  },
+  "external_1": {
+    "cohort": "GSE72094",
+    "n_patients": 398,
+    "n_events": 113,
+    "c_index": 0.636,
+    "platform": "Affymetrix microarray",
+    "notes": "no dysregulation (platform mismatch with GTEx)"
+  },
+  "external_2": {
+    "cohort": "GSE68465",
+    "n_patients": 442,
+    "n_events": 236,
+    "c_index": 0.637,
+    "platform": "Affymetrix microarray GPL96",
+    "notes": "full features including dysregulation"
+  },
+  "external_3": {
+    "cohort": "CPTAC-LUAD",
+    "n_patients": 203,
+    "n_events": 53,
+    "c_index": 0.557,
+    "platform": "RNA-seq",
+    "notes": "no stage information, alive patients censored at max death time"
+  }
+}
