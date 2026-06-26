@@ -1,0 +1,41 @@
+{
+  "created": "2026-06-19T17:10:21.749025",
+  "primary_model": {
+    "c_index": 0.702,
+    "std": 0.057,
+    "n_patients": 478,
+    "status": "FINAL REPORTED RESULT"
+  },
+  "harmonised_model": {
+    "c_index": 0.6865,
+    "std": 0.0314,
+    "n_patients": 920,
+    "status": "EXPERIMENT \u2014 below primary model",
+    "outcome": 3
+  },
+  "base_learners": {
+    "bl1_pathway_xgboost": {
+      "c_index": 0.6143,
+      "std": 0.0204
+    },
+    "bl2_gene_xgboost": {
+      "c_index": 0.6229,
+      "std": 0.0347
+    },
+    "bl3_cox_elasticnet": {
+      "c_index": 0.689,
+      "std": 0.0308
+    }
+  },
+  "meta_learner_coefficients": {
+    "bl1": 0.045,
+    "bl2": -0.0462,
+    "bl3": 0.5694
+  },
+  "oof_correlations": {
+    "bl1_bl2": 0.5078,
+    "bl1_bl3": 0.4639,
+    "bl2_bl3": 0.6553
+  },
+  "key_finding": "Platform-constrained features (44/72 Lasso genes) offset the benefit of expanded training data (920 vs 478 patients). Cox-ElasticNet alone matches stacking performance, suggesting XGBoost base learners add no complementary signal in this regime."
+}

@@ -1,34 +1,18 @@
 {
-  "model": "Leakage-free Ensemble: XGBoost(0.7) + FusionV3(0.3)",
-  "leakage_free": true,
-  "cv_strategy": "StratifiedKFold_5fold",
-  "xgb_params": {
-    "n_estimators": 300,
-    "learning_rate": 0.05,
-    "max_depth": 2,
-    "subsample": 0.8
-  },
-  "feature_selection": {
-    "expression": "72 genes from NB03 Cox-Lasso (regularised)",
-    "dysregulation": "top 20 Cox p-value inside each CV fold",
-    "immune": "all 22 CIBERSORT features",
-    "clinical": "all 5 features",
-    "interactions": "5 biological interaction terms"
-  },
-  "cv_cindex_mean": 0.702,
-  "cv_cindex_std": 0.057,
+  "cv_cindex_mean": 0.67,
+  "cv_cindex_std": 0.07,
   "fold_cindices": [
-    0.6517,
-    0.7756,
-    0.6287,
-    0.6951,
-    0.7569
+    0.5613,
+    0.7105,
+    0.6245,
+    0.6911,
+    0.7638
   ],
   "comparison": {
     "Cox_Clinical_baseline": 0.7,
-    "Leakage_free_ensemble": 0.702,
-    "XGBoost_leakage_free": 0.693,
-    "Fusion_V3_stable": 0.655,
-    "XGBoost_with_leakage_DO_NOT_REPORT": 0.711
-  }
+    "Leakage_free_ensemble": 0.67,
+    "XGBoost_leakage_free": 0.64,
+    "Attention_Fusion_leakage_free": 0.681
+  },
+  "leakage_free": true
 }

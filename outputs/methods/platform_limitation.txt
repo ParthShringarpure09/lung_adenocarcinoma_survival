@@ -1,0 +1,38 @@
+Platform Coverage Limitation (Methods Section)
+================================================
+The GPL96 (Affymetrix HG-U133A) microarray platform used by GSE68465 does not 
+cover 26 of the 72 Cox-Lasso selected expression genes, including 12 with absolute 
+coefficients >= 0.10 (PKHD1L1, CNTN3, KCNA6, EPGN, WFDC3, GPC6, TMEM139, PCSK9, 
+TMEM215, LOC654433, MPV17L, FBN3). These genes were excluded from the harmonised 
+training set. No imputation was performed. The harmonised model therefore uses 46 
+of 72 expression features and should be interpreted as a platform-constrained 
+variant of the primary model. The primary reported model (C-index = 0.702) uses 
+all 72 expression features on 478 TCGA-LUAD patients and is not subject to 
+this constraint.
+
+Missing high-coefficient genes (|coef| >= 0.10):
+  PKHD1L1  : -0.3594
+  CNTN3    : -0.2610
+  KCNA6    : -0.2273
+  EPGN     :  0.2142
+  WFDC3    : -0.2028
+  GPC6     :  0.1683
+  TMEM139  :  0.1556
+  PCSK9    :  0.1413
+  TMEM215  : -0.1311
+  LOC654433:  0.1274
+  MPV17L   : -0.1242
+  FBN3     : -0.1103
+
+ComBat Harmonisation Results (Methods Section)
+===============================================
+Following ComBat harmonisation, kNN batch classification accuracy decreased 
+from 1.000 to 0.725 (chance = 0.500), with PC1 variance explained decreasing 
+from 33.9% to 10.4%. Residual separability reflects inherent technological 
+differences between RNA-seq and microarray platforms that batch correction 
+cannot fully resolve. Batch mean expression difference decreased from 0.013 
+to 0.0003, confirming removal of systematic additive effects.
+
+Tool: neuroCombat (empirical Bayes, parametric adjustment)
+Note: inmoose 0.8.1 pycombat_norm rejected — silent NaN output on 11,122/11,600 
+genes. neuroCombat used as stable alternative. Same ComBat algorithm.
