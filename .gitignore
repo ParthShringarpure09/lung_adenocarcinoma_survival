@@ -16,4 +16,15 @@ data/external/
 
 # OS
 .DS_Store
-Thumbs.db
+Thumbs.dbdata/processed/expression_combat_harmonised.csv
+data/processed/expression_full_478.csv
+data/processed/dysregulation_scores_combat_920.csv
+data/processed/hallmark_pathway_scores_920.csv
+data/processed/immune_features_combat_920.csv
+data/processed/features_dysreg_920.csv
+notebooks.zip
+outputs.zip
+notebooks/11d_xgboost_attention_leakage_free_clean.ipynb
+notebooks/NB23_extended_evaluation_leakage_free.ipynb
+notebooks/trial.ipynb
+IMP_NOTEBOOKS/
