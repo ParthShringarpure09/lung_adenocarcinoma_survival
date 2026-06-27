@@ -1,0 +1,11 @@
+patient_id,risk_score,age,gender,stage,survival_days,event,risk_group,label,display_name
+TCGA-64-5775,0.9865797704746104,71.0,Male,Stage III,62.0,1,HIGH,"High Risk, Died Early","Patient A — Stage III, 71yo, High Risk, Died Early"
+TCGA-05-4415,0.9787397064141231,57.0,Male,Stage III,91.0,1,HIGH,"High Risk, Died Early","Patient B — Stage III, 57yo, High Risk, Died Early"
+TCGA-78-7163,0.11379820533833487,60.0,Male,Stage I,6812.0,0,LOW,"Low Risk, Long Survivor","Patient C — Stage I, 60yo, Low Risk, Long Survivor"
+TCGA-49-AARQ,0.11172835698662632,41.0,Female,Stage I,6443.0,0,LOW,"Low Risk, Long Survivor","Patient D — Stage I, 41yo, Low Risk, Long Survivor"
+TCGA-78-7542,0.8939802397695854,56.0,Male,Stage I,321.0,1,HIGH,Stage I — High Molecular Risk,"Patient E — Stage I, 56yo, Stage I — High Molecular Risk"
+TCGA-38-4631,0.8013262697784727,72.0,Female,Stage I,354.0,1,HIGH,Stage I — High Molecular Risk,"Patient F — Stage I, 72yo, Stage I — High Molecular Risk"
+TCGA-62-8399,0.3173322046706185,62.0,Male,Stage III,2093.0,0,LOW,Stage III — Low Molecular Risk,"Patient G — Stage III, 62yo, Stage III — Low Molecular Risk"
+TCGA-MP-A4T6,0.3685564301422719,76.0,Female,Stage III,1790.0,1,LOW,Stage III — Low Molecular Risk,"Patient H — Stage III, 76yo, Stage III — Low Molecular Risk"
+TCGA-55-8506,0.4659870531073237,62.0,Female,Stage II,11.0,0,MEDIUM,Medium Risk,"Patient I — Stage II, 62yo, Medium Risk"
+TCGA-91-8496,0.4666246687435446,63.0,Female,Stage I,197.0,0,MEDIUM,Medium Risk,"Patient J — Stage I, 63yo, Medium Risk"

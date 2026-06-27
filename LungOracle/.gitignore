@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+venv/
+.venv/
+
+# Large data files
+data/processed/expression_matrix.csv
+data/processed/expression_combat_harmonised.csv
+data/processed/expression_full_478.csv
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Gradio cache
+gradio_cached_examples/
+*.pkl.bak
+
+# App copies
+app copy*.py
