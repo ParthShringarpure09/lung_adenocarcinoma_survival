@@ -1,0 +1,912 @@
+{
+  "Patient A \u2014 Stage III, 71yo, HIGH risk": {
+    "patient_id": "TCGA-64-5775",
+    "letter": "A",
+    "age": 71,
+    "gender": "Male",
+    "stage": "Stage III",
+    "survival_days": 62.0,
+    "event": 1,
+    "label": "High Risk, Died Early",
+    "risk_score": 0.9772399684507311,
+    "risk_group": "HIGH",
+    "immune_fractions": {
+      "B cells naive": 0.0,
+      "B cells memory": 0.0,
+      "Plasma cells": 0.0,
+      "T cells CD8": 0.0,
+      "T cells CD4 naive": 0.0,
+      "T cells CD4 memory resting": 0.0,
+      "T cells CD4 memory activated": 0.0,
+      "T cells follicular helper": 0.04602890809808107,
+      "T cells regulatory (Tregs)": 0.02270545865389179,
+      "T cells gamma delta": 0.17241154831060107,
+      "NK cells resting": 0.0,
+      "NK cells activated": 0.0,
+      "Monocytes": 0.0,
+      "Macrophages M0": 0.37847364145351253,
+      "Macrophages M1": 0.0,
+      "Macrophages M2": 0.027312822813801367,
+      "Dendritic cells resting": 0.009622178208970062,
+      "Dendritic cells activated": 0.06340626059273817,
+      "Mast cells resting": 0.14989606094297536,
+      "Mast cells activated": 0.021492976824268255,
+      "Eosinophils": 0.012783653353135895,
+      "Neutrophils": 0.0958664907480244
+    },
+    "shap_features": [
+      {
+        "label": "Age \u00d7 Stage III Interaction",
+        "shap_value": 0.8582713691018518,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "PKHD1L1 Gene Expression",
+        "shap_value": 0.36195092522807826,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "RGS20 Tumour Dysregulation",
+        "shap_value": 0.3382005391876224,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "CD109 Tumour Dysregulation",
+        "shap_value": 0.2755953038666382,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "TRPC2 Gene Expression",
+        "shap_value": 0.2348895852215243,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "GADD45G Tumour Dysregulation",
+        "shap_value": 0.13703158184398484,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "HS3ST2 Gene Expression",
+        "shap_value": 0.11912066945805697,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "ELF5 Tumour Dysregulation",
+        "shap_value": 0.11462733570994867,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "COL4A6 Tumour Dysregulation",
+        "shap_value": 0.10874143239003606,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "IRF4 Gene Expression",
+        "shap_value": 0.10225110205789924,
+        "direction": "Increases Risk"
+      }
+    ],
+    "explanation": "All top features increased this patient's predicted risk, led by Age \u00d7 Stage III Interaction.",
+    "km_star_x": 0.1697467488021903,
+    "km_star_y": 0.9656753581812005
+  },
+  "Patient B \u2014 Stage III, 57yo, HIGH risk": {
+    "patient_id": "TCGA-05-4415",
+    "letter": "B",
+    "age": 57,
+    "gender": "Male",
+    "stage": "Stage III",
+    "survival_days": 91.0,
+    "event": 1,
+    "label": "High Risk, Died Early",
+    "risk_score": 0.978978204319647,
+    "risk_group": "HIGH",
+    "immune_fractions": {
+      "B cells naive": 0.003132284656971849,
+      "B cells memory": 0.0018101804719004703,
+      "Plasma cells": 0.0,
+      "T cells CD8": 0.07343762411795189,
+      "T cells CD4 naive": 0.0,
+      "T cells CD4 memory resting": 0.14467011012672673,
+      "T cells CD4 memory activated": 0.0,
+      "T cells follicular helper": 0.0471461352658537,
+      "T cells regulatory (Tregs)": 0.0,
+      "T cells gamma delta": 0.0,
+      "NK cells resting": 0.0,
+      "NK cells activated": 0.08839295552074568,
+      "Monocytes": 0.0,
+      "Macrophages M0": 0.23252344590480256,
+      "Macrophages M1": 0.0,
+      "Macrophages M2": 0.07859874521738958,
+      "Dendritic cells resting": 0.0,
+      "Dendritic cells activated": 0.0,
+      "Mast cells resting": 0.07740838076371197,
+      "Mast cells activated": 0.06530062607313292,
+      "Eosinophils": 0.13190615320888932,
+      "Neutrophils": 0.055673358671923356
+    },
+    "shap_features": [
+      {
+        "label": "Age \u00d7 Stage III Interaction",
+        "shap_value": 0.3869108736192348,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "CD109 Tumour Dysregulation",
+        "shap_value": 0.2732977993714969,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "GPR64 Gene Expression",
+        "shap_value": 0.2723040714320323,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "RGS20 Tumour Dysregulation",
+        "shap_value": 0.261124168563825,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "TRPC2 Gene Expression",
+        "shap_value": 0.25582768091107577,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "TGFB2 Gene Expression",
+        "shap_value": 0.17375514760197353,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "GADD45G Tumour Dysregulation",
+        "shap_value": 0.14579396927389196,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "EPGN Gene Expression",
+        "shap_value": 0.1201056537408261,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "BLK Gene Expression",
+        "shap_value": 0.11678724641826918,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "EPGN Tumour Dysregulation",
+        "shap_value": 0.11601845165553354,
+        "direction": "Increases Risk"
+      }
+    ],
+    "explanation": "All top features increased this patient's predicted risk, led by Age \u00d7 Stage III Interaction.",
+    "km_star_x": 0.24914442162902123,
+    "km_star_y": 0.9485607413907117
+  },
+  "Patient C \u2014 Stage I, 60yo, LOW risk": {
+    "patient_id": "TCGA-78-7163",
+    "letter": "C",
+    "age": 60,
+    "gender": "Male",
+    "stage": "Stage I",
+    "survival_days": 6812.0,
+    "event": 0,
+    "label": "Low Risk, Long Survivor",
+    "risk_score": 0.1151216315823907,
+    "risk_group": "LOW",
+    "immune_fractions": {
+      "B cells naive": 0.0,
+      "B cells memory": 0.0,
+      "Plasma cells": 0.13401273395676935,
+      "T cells CD8": 0.03625150950582744,
+      "T cells CD4 naive": 0.01374816378692699,
+      "T cells CD4 memory resting": 0.14916245969146946,
+      "T cells CD4 memory activated": 0.0,
+      "T cells follicular helper": 0.008416716660107735,
+      "T cells regulatory (Tregs)": 0.09965081900610773,
+      "T cells gamma delta": 0.0,
+      "NK cells resting": 0.0,
+      "NK cells activated": 0.13850183862277776,
+      "Monocytes": 0.0,
+      "Macrophages M0": 0.09957303985552166,
+      "Macrophages M1": 0.0,
+      "Macrophages M2": 0.0,
+      "Dendritic cells resting": 0.0,
+      "Dendritic cells activated": 0.13986976350200364,
+      "Mast cells resting": 0.0,
+      "Mast cells activated": 0.06466807444904321,
+      "Eosinophils": 0.034278456792669464,
+      "Neutrophils": 0.08186642417077557
+    },
+    "shap_features": [
+      {
+        "label": "ADAMTS1 Gene Expression",
+        "shap_value": -0.3898750226132085,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "CD109 Tumour Dysregulation",
+        "shap_value": -0.3482422558614583,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "CRHR2 Gene Expression",
+        "shap_value": -0.20304754811325273,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "EPGN Tumour Dysregulation",
+        "shap_value": -0.13086262655783454,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "NLRP2 Gene Expression",
+        "shap_value": -0.09338603080044681,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "NAV3 Gene Expression",
+        "shap_value": -0.08744637496090622,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "IRF4 Gene Expression",
+        "shap_value": 0.082747965628533,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "EPGN Gene Expression",
+        "shap_value": -0.06731243541065521,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "LINGO2 Tumour Dysregulation",
+        "shap_value": -0.0641948299440478,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "PAQR5 Gene Expression",
+        "shap_value": -0.06346766313854353,
+        "direction": "Decreases Risk"
+      }
+    ],
+    "explanation": "The strongest risk-increasing factor for this patient was IRF4 Gene Expression, while ADAMTS1 Gene Expression was the strongest protective factor.",
+    "km_star_x": 18.650239561943874,
+    "km_star_y": 0.3044063754522944
+  },
+  "Patient D \u2014 Stage I, 41yo, LOW risk": {
+    "patient_id": "TCGA-49-AARQ",
+    "letter": "D",
+    "age": 41,
+    "gender": "Female",
+    "stage": "Stage I",
+    "survival_days": 6443.0,
+    "event": 0,
+    "label": "Low Risk, Long Survivor",
+    "risk_score": 0.11906902016411194,
+    "risk_group": "LOW",
+    "immune_fractions": {
+      "B cells naive": 0.0,
+      "B cells memory": 0.0,
+      "Plasma cells": 0.2449308823973217,
+      "T cells CD8": 0.1342758454731268,
+      "T cells CD4 naive": 0.0,
+      "T cells CD4 memory resting": 0.012211593315503848,
+      "T cells CD4 memory activated": 0.048487343177759594,
+      "T cells follicular helper": 0.0,
+      "T cells regulatory (Tregs)": 0.042581441473746005,
+      "T cells gamma delta": 0.07092845627655922,
+      "NK cells resting": 0.0,
+      "NK cells activated": 0.0,
+      "Monocytes": 0.0,
+      "Macrophages M0": 0.0,
+      "Macrophages M1": 0.29348174094316903,
+      "Macrophages M2": 0.06593855659858484,
+      "Dendritic cells resting": 0.0,
+      "Dendritic cells activated": 0.07332165739750889,
+      "Mast cells resting": 0.013842482946720155,
+      "Mast cells activated": 0.0,
+      "Eosinophils": 0.0,
+      "Neutrophils": 0.0
+    },
+    "shap_features": [
+      {
+        "label": "ADAMTS1 Gene Expression",
+        "shap_value": -0.37465775089676795,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "CD109 Tumour Dysregulation",
+        "shap_value": -0.3099688526998074,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "HIST1H3G Gene Expression",
+        "shap_value": -0.18964280390129531,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "TG Gene Expression",
+        "shap_value": -0.14117234009002047,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "KIR2DL3 Gene Expression",
+        "shap_value": -0.13076723817020713,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "EPGN Tumour Dysregulation",
+        "shap_value": -0.1117477402065298,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "CRHR2 Gene Expression",
+        "shap_value": 0.07573469101426006,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "NAV3 Gene Expression",
+        "shap_value": -0.06936293983670876,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "EPGN Gene Expression",
+        "shap_value": -0.06924788300510379,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "BEND5 Gene Expression",
+        "shap_value": -0.06312651668540509,
+        "direction": "Decreases Risk"
+      }
+    ],
+    "explanation": "The strongest risk-increasing factor for this patient was CRHR2 Gene Expression, while ADAMTS1 Gene Expression was the strongest protective factor.",
+    "km_star_x": 17.639972621492127,
+    "km_star_y": 0.3044063754522944
+  },
+  "Patient E \u2014 Stage I, 56yo, HIGH risk": {
+    "patient_id": "TCGA-78-7542",
+    "letter": "E",
+    "age": 56,
+    "gender": "Male",
+    "stage": "Stage I",
+    "survival_days": 321.0,
+    "event": 1,
+    "label": "Stage I \u2014 High Molecular Risk",
+    "risk_score": 0.8971005097528542,
+    "risk_group": "HIGH",
+    "immune_fractions": {
+      "B cells naive": 0.0,
+      "B cells memory": 0.0,
+      "Plasma cells": 0.0022208500019658267,
+      "T cells CD8": 0.0,
+      "T cells CD4 naive": 0.0,
+      "T cells CD4 memory resting": 0.036422333603047904,
+      "T cells CD4 memory activated": 0.0,
+      "T cells follicular helper": 0.07727163730600589,
+      "T cells regulatory (Tregs)": 0.0,
+      "T cells gamma delta": 0.08962169208029211,
+      "NK cells resting": 0.0008697340451855477,
+      "NK cells activated": 0.0,
+      "Monocytes": 0.021269673810062627,
+      "Macrophages M0": 0.16091704239760649,
+      "Macrophages M1": 0.0,
+      "Macrophages M2": 0.13179880660510382,
+      "Dendritic cells resting": 0.0,
+      "Dendritic cells activated": 0.13369430580883376,
+      "Mast cells resting": 0.11284457568779677,
+      "Mast cells activated": 0.0876065300655527,
+      "Eosinophils": 0.14546281858854662,
+      "Neutrophils": 0.0
+    },
+    "shap_features": [
+      {
+        "label": "RGS20 Tumour Dysregulation",
+        "shap_value": 0.39742191777202995,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "CD109 Tumour Dysregulation",
+        "shap_value": 0.2808591323750028,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "GPR64 Gene Expression",
+        "shap_value": 0.16453776483943522,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "GADD45G Tumour Dysregulation",
+        "shap_value": 0.14579396927389462,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "NAV3 Gene Expression",
+        "shap_value": 0.09859091507810824,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "CASP14 Gene Expression",
+        "shap_value": 0.08911520363796287,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "RHCG Gene Expression",
+        "shap_value": 0.08894335445483698,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "CRHR2 Gene Expression",
+        "shap_value": 0.0767917178771664,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "BLK Gene Expression",
+        "shap_value": 0.07439334635847732,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "PKHD1L1 Gene Expression",
+        "shap_value": 0.07244314355700368,
+        "direction": "Increases Risk"
+      }
+    ],
+    "explanation": "All top features increased this patient's predicted risk, led by RGS20 Tumour Dysregulation.",
+    "km_star_x": 0.8788501026694046,
+    "km_star_y": 0.7731391285558321
+  },
+  "Patient F \u2014 Stage I, 72yo, HIGH risk": {
+    "patient_id": "TCGA-38-4631",
+    "letter": "F",
+    "age": 72,
+    "gender": "Female",
+    "stage": "Stage I",
+    "survival_days": 354.0,
+    "event": 1,
+    "label": "Stage I \u2014 High Molecular Risk",
+    "risk_score": 0.8090663773100311,
+    "risk_group": "HIGH",
+    "immune_fractions": {
+      "B cells naive": 0.0,
+      "B cells memory": 0.0,
+      "Plasma cells": 0.07809874229945282,
+      "T cells CD8": 0.0,
+      "T cells CD4 naive": 0.0,
+      "T cells CD4 memory resting": 0.0,
+      "T cells CD4 memory activated": 0.0,
+      "T cells follicular helper": 0.0,
+      "T cells regulatory (Tregs)": 0.0,
+      "T cells gamma delta": 0.06792508902663706,
+      "NK cells resting": 0.0,
+      "NK cells activated": 0.0,
+      "Monocytes": 0.22780672263227492,
+      "Macrophages M0": 0.25450711511784174,
+      "Macrophages M1": 0.0,
+      "Macrophages M2": 0.010211742479590401,
+      "Dendritic cells resting": 0.007044636895820524,
+      "Dendritic cells activated": 0.0029614910434823333,
+      "Mast cells resting": 0.09364826228869377,
+      "Mast cells activated": 0.10107883812723677,
+      "Eosinophils": 0.1373490691918925,
+      "Neutrophils": 0.019368290897077048
+    },
+    "shap_features": [
+      {
+        "label": "RGS20 Tumour Dysregulation",
+        "shap_value": 0.3117540574881918,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "TRPC2 Gene Expression",
+        "shap_value": 0.21696343450493458,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "RHCG Gene Expression",
+        "shap_value": 0.0915260424849043,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "CRHR2 Gene Expression",
+        "shap_value": 0.08821710897622684,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "CDH10 Gene Expression",
+        "shap_value": 0.08607396421098448,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "IRF4 Gene Expression",
+        "shap_value": 0.08302943516627492,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "KLHDC7A Tumour Dysregulation",
+        "shap_value": 0.07761117305217506,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "EPGN Tumour Dysregulation",
+        "shap_value": 0.07557040031300707,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "ELF5 Tumour Dysregulation",
+        "shap_value": 0.06317915377696787,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "Age \u00d7 Stage III Interaction",
+        "shap_value": -0.060822934598325024,
+        "direction": "Decreases Risk"
+      }
+    ],
+    "explanation": "The strongest risk-increasing factor for this patient was RGS20 Tumour Dysregulation, while Age \u00d7 Stage III Interaction was the strongest protective factor.",
+    "km_star_x": 0.9691991786447639,
+    "km_star_y": 0.7475544795714044
+  },
+  "Patient G \u2014 Stage III, 62yo, LOW risk": {
+    "patient_id": "TCGA-62-8399",
+    "letter": "G",
+    "age": 62,
+    "gender": "Male",
+    "stage": "Stage III",
+    "survival_days": 2093.0,
+    "event": 0,
+    "label": "Stage III \u2014 Low Molecular Risk",
+    "risk_score": 0.3257530202549066,
+    "risk_group": "LOW",
+    "immune_fractions": {
+      "B cells naive": 0.007577529219286394,
+      "B cells memory": 0.0,
+      "Plasma cells": 0.0,
+      "T cells CD8": 0.0,
+      "T cells CD4 naive": 0.0,
+      "T cells CD4 memory resting": 0.0039852322387986285,
+      "T cells CD4 memory activated": 0.020864334153239638,
+      "T cells follicular helper": 0.0,
+      "T cells regulatory (Tregs)": 0.021783463658826215,
+      "T cells gamma delta": 0.16565627178194917,
+      "NK cells resting": 0.0,
+      "NK cells activated": 0.06073576850336255,
+      "Monocytes": 0.10979166521225286,
+      "Macrophages M0": 0.36669694427625144,
+      "Macrophages M1": 0.0,
+      "Macrophages M2": 0.0,
+      "Dendritic cells resting": 0.0719049818866567,
+      "Dendritic cells activated": 0.07631915888770374,
+      "Mast cells resting": 0.0,
+      "Mast cells activated": 0.0,
+      "Eosinophils": 0.09468465018167266,
+      "Neutrophils": 0.0
+    },
+    "shap_features": [
+      {
+        "label": "Age \u00d7 Stage III Interaction",
+        "shap_value": 0.19003128357634982,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "DKK1 Tumour Dysregulation",
+        "shap_value": -0.10431051597115268,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "RGS20 Tumour Dysregulation",
+        "shap_value": -0.09050965288557963,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "NLRP2 Gene Expression",
+        "shap_value": -0.07854491687121185,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "CD109 Tumour Dysregulation",
+        "shap_value": -0.0756553049553855,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "CCDC40 Gene Expression",
+        "shap_value": -0.06623552287234373,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "EPGN Tumour Dysregulation",
+        "shap_value": -0.061597979689684765,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "Eosinophils",
+        "shap_value": 0.05660533761794273,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "COL4A6 Tumour Dysregulation",
+        "shap_value": -0.055807010503355896,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "EPGN Gene Expression",
+        "shap_value": -0.05332781157966607,
+        "direction": "Decreases Risk"
+      }
+    ],
+    "explanation": "The strongest risk-increasing factor for this patient was Age \u00d7 Stage III Interaction, while DKK1 Tumour Dysregulation was the strongest protective factor.",
+    "km_star_x": 5.730321697467488,
+    "km_star_y": 0.6811417871231681
+  },
+  "Patient H \u2014 Stage III, 76yo, LOW risk": {
+    "patient_id": "TCGA-MP-A4T6",
+    "letter": "H",
+    "age": 76,
+    "gender": "Female",
+    "stage": "Stage III",
+    "survival_days": 1790.0,
+    "event": 1,
+    "label": "Stage III \u2014 Low Molecular Risk",
+    "risk_score": 0.27255485703988414,
+    "risk_group": "LOW",
+    "immune_fractions": {
+      "B cells naive": 0.0,
+      "B cells memory": 0.0,
+      "Plasma cells": 0.20264808177254953,
+      "T cells CD8": 0.0896663334023367,
+      "T cells CD4 naive": 0.0,
+      "T cells CD4 memory resting": 0.032363730622866724,
+      "T cells CD4 memory activated": 0.0,
+      "T cells follicular helper": 0.0,
+      "T cells regulatory (Tregs)": 0.06678376470868566,
+      "T cells gamma delta": 0.09658535469548497,
+      "NK cells resting": 0.0,
+      "NK cells activated": 0.0,
+      "Monocytes": 0.013052965916419499,
+      "Macrophages M0": 0.0,
+      "Macrophages M1": 0.265168069651415,
+      "Macrophages M2": 0.014875903735621058,
+      "Dendritic cells resting": 0.029790061183485556,
+      "Dendritic cells activated": 0.08940527090134567,
+      "Mast cells resting": 0.0,
+      "Mast cells activated": 0.09855870320191809,
+      "Eosinophils": 0.0,
+      "Neutrophils": 0.00110176020787158
+    },
+    "shap_features": [
+      {
+        "label": "Age \u00d7 Stage III Interaction",
+        "shap_value": 0.748920678614944,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "CD109 Tumour Dysregulation",
+        "shap_value": -0.2780051340194268,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "ADAMTS1 Gene Expression",
+        "shap_value": -0.2525196466643226,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "CRHR2 Gene Expression",
+        "shap_value": -0.18982162943106135,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "EPGN Tumour Dysregulation",
+        "shap_value": -0.14466337164907261,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "NLRP2 Gene Expression",
+        "shap_value": -0.10096956555480853,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "ALX1 Gene Expression",
+        "shap_value": 0.08425886905656169,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "DKK1 Tumour Dysregulation",
+        "shap_value": -0.07826337266780849,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "EPGN Gene Expression",
+        "shap_value": -0.06640572573498807,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "IRF4 Gene Expression",
+        "shap_value": -0.05947868015290563,
+        "direction": "Decreases Risk"
+      }
+    ],
+    "explanation": "The strongest risk-increasing factor for this patient was Age \u00d7 Stage III Interaction, while CD109 Tumour Dysregulation was the strongest protective factor.",
+    "km_star_x": 4.900752908966461,
+    "km_star_y": 0.7135771103195095
+  },
+  "Patient I \u2014 Stage II, 62yo, MEDIUM risk": {
+    "patient_id": "TCGA-55-8506",
+    "letter": "I",
+    "age": 62,
+    "gender": "Female",
+    "stage": "Stage II",
+    "survival_days": 11.0,
+    "event": 0,
+    "label": "Medium Risk",
+    "risk_score": 0.48400910768173355,
+    "risk_group": "MEDIUM",
+    "immune_fractions": {
+      "B cells naive": 0.0,
+      "B cells memory": 0.0,
+      "Plasma cells": 0.13220063300198232,
+      "T cells CD8": 0.029999055279461048,
+      "T cells CD4 naive": 0.17853474703343492,
+      "T cells CD4 memory resting": 0.04690181082225822,
+      "T cells CD4 memory activated": 0.0,
+      "T cells follicular helper": 0.0,
+      "T cells regulatory (Tregs)": 0.02326242981713739,
+      "T cells gamma delta": 0.04689201294216782,
+      "NK cells resting": 0.0,
+      "NK cells activated": 0.04544465502468745,
+      "Monocytes": 0.0,
+      "Macrophages M0": 0.025853788134608553,
+      "Macrophages M1": 0.0,
+      "Macrophages M2": 0.05613854124813562,
+      "Dendritic cells resting": 0.0,
+      "Dendritic cells activated": 0.03751935283395496,
+      "Mast cells resting": 0.0,
+      "Mast cells activated": 0.20722697375636973,
+      "Eosinophils": 0.10926688783447802,
+      "Neutrophils": 0.06075911227132397
+    },
+    "shap_features": [
+      {
+        "label": "ZNF257 Gene Expression",
+        "shap_value": 0.19134879196522941,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "EPGN Tumour Dysregulation",
+        "shap_value": -0.10537935821913504,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "HIST1H3G Gene Expression",
+        "shap_value": -0.09952333165010799,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "PKHD1L1 Gene Expression",
+        "shap_value": 0.08924578437813471,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "IRF4 Gene Expression",
+        "shap_value": 0.08047216709399728,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "RGS20 Tumour Dysregulation",
+        "shap_value": -0.07458216036116642,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "CD109 Tumour Dysregulation",
+        "shap_value": -0.07173562389013327,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "CCDC40 Gene Expression",
+        "shap_value": 0.06776701072947074,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "CRHR2 Gene Expression",
+        "shap_value": 0.06585840428427146,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "Stage III + High M2 Interaction",
+        "shap_value": -0.06219014481541749,
+        "direction": "Decreases Risk"
+      }
+    ],
+    "explanation": "The strongest risk-increasing factor for this patient was ZNF257 Gene Expression, while EPGN Tumour Dysregulation was the strongest protective factor.",
+    "km_star_x": 0.030116358658453114,
+    "km_star_y": 1.0
+  },
+  "Patient J \u2014 Stage I, 63yo, MEDIUM risk": {
+    "patient_id": "TCGA-91-8496",
+    "letter": "J",
+    "age": 63,
+    "gender": "Female",
+    "stage": "Stage I",
+    "survival_days": 197.0,
+    "event": 0,
+    "label": "Medium Risk",
+    "risk_score": 0.49960720083532395,
+    "risk_group": "MEDIUM",
+    "immune_fractions": {
+      "B cells naive": 0.0468714918614054,
+      "B cells memory": 0.0,
+      "Plasma cells": 0.0,
+      "T cells CD8": 0.0816434190283762,
+      "T cells CD4 naive": 0.13229412993533757,
+      "T cells CD4 memory resting": 0.00709180605118069,
+      "T cells CD4 memory activated": 0.0,
+      "T cells follicular helper": 0.0,
+      "T cells regulatory (Tregs)": 0.0,
+      "T cells gamma delta": 0.01950344784379637,
+      "NK cells resting": 0.0,
+      "NK cells activated": 0.1643633000991809,
+      "Monocytes": 0.0,
+      "Macrophages M0": 0.024532550301367667,
+      "Macrophages M1": 0.020307240935696698,
+      "Macrophages M2": 0.008963448889738572,
+      "Dendritic cells resting": 0.04158673842625168,
+      "Dendritic cells activated": 0.06433555929733734,
+      "Mast cells resting": 0.10906323759559226,
+      "Mast cells activated": 0.09805778685761053,
+      "Eosinophils": 0.11088833567190587,
+      "Neutrophils": 0.07049750720522231
+    },
+    "shap_features": [
+      {
+        "label": "EPGN Tumour Dysregulation",
+        "shap_value": -0.12537083375031266,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "CCDC40 Gene Expression",
+        "shap_value": 0.10099719295853908,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "IRF4 Gene Expression",
+        "shap_value": 0.0900055743712581,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "EPGN Gene Expression",
+        "shap_value": -0.0707939743871235,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "SIX1 Gene Expression",
+        "shap_value": 0.06788148169711668,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "BEND5 Gene Expression",
+        "shap_value": -0.06312651668540506,
+        "direction": "Decreases Risk"
+      },
+      {
+        "label": "TMEM215 Gene Expression",
+        "shap_value": 0.058213731509712444,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "LINGO2 Tumour Dysregulation",
+        "shap_value": 0.055704462543268815,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "ADAMTS1 Gene Expression",
+        "shap_value": 0.054497280396493056,
+        "direction": "Increases Risk"
+      },
+      {
+        "label": "NOS3 Gene Expression",
+        "shap_value": 0.05251123372724558,
+        "direction": "Increases Risk"
+      }
+    ],
+    "explanation": "The strongest risk-increasing factor for this patient was CCDC40 Gene Expression, while EPGN Tumour Dysregulation was the strongest protective factor.",
+    "km_star_x": 0.5393566050650239,
+    "km_star_y": 0.9933774834437085
+  }
+}
