@@ -1,0 +1,12 @@
+gradio>=4.0.0
+scikit-survival
+scikit-learn
+shap
+plotly
+pandas
+numpy
+lifelines
+scipy
+matplotlib
+seaborn
+Pillow
