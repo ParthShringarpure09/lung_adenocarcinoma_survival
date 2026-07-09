@@ -28,3 +28,9 @@ notebooks/11d_xgboost_attention_leakage_free_clean.ipynb
 notebooks/NB23_extended_evaluation_leakage_free.ipynb
 notebooks/trial.ipynb
 IMP_NOTEBOOKS/
+GPL96.annot.gz
+GPL96_family.soft.gz
+GPL96_annotation.txt
+documents/*.zip
+_archive/
+notebooks/outputs/

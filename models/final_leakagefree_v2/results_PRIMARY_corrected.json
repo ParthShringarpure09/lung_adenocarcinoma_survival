@@ -1,0 +1,210 @@
+{
+  "model": "Single regularised Gradient Boosting Survival Model (GBM), leakage-free",
+  "notebook": "12_primary_model_leakagefree_FINAL.ipynb",
+  "cohort": {
+    "n_patients": 470,
+    "n_events": 119,
+    "event_rate": 0.2532,
+    "excluded_missing_stage": 8,
+    "note": "8 patients excluded for missing AJCC stage (raw 'stage' field also NaN \u2014 confirmed unrecoverable)"
+  },
+  "methodology": {
+    "cv_strategy": "StratifiedKFold_5fold_x_10seeds_repeated",
+    "expression_gene_selection": "Cox-Lasso (CoxnetSurvivalAnalysis), alpha selected via nested inner CV (5 folds x 5 repeats), fit fresh INSIDE each outer fold \u2014 fixes prior global-selection leak",
+    "dysreg_gene_selection": "Top-20 by univariate Cox p-value, selected fresh inside each outer fold",
+    "gbm_params": {
+      "n_estimators": 100,
+      "learning_rate": 0.05,
+      "max_depth": 2,
+      "min_samples_split": 30,
+      "min_samples_leaf": 15,
+      "subsample": 0.7,
+      "max_features": 0.6
+    },
+    "leakage_free": true,
+    "no_neural_component": true,
+    "no_ensemble": true
+  },
+  "primary_result": {
+    "pooled_oof_cindex_seed42": 0.6417,
+    "bootstrap_95CI": [
+      0.5816,
+      0.7051
+    ],
+    "repeated_cv_pooled_mean_across_10_seeds": 0.6447,
+    "repeated_cv_pooled_std_across_10_seeds": 0.0195,
+    "fold_level_mean_test_cindex": 0.6462,
+    "fold_level_std_test_cindex": 0.0585,
+    "mean_train_test_gap": 0.2203
+  },
+  "clinical_baseline": {
+    "cindex": 0.6973,
+    "bootstrap_95CI": [
+      0.6392,
+      0.759
+    ],
+    "features": "age, gender, stage (dummy-coded)"
+  },
+  "paired_comparison": {
+    "clinical_minus_molecular_mean_diff": 0.0572,
+    "diff_95CI": [
+      -0.0056,
+      0.1173
+    ],
+    "pct_resamples_favoring_clinical": 96.4,
+    "significant_at_95pct": false,
+    "conclusion": "Molecular combined model does NOT significantly exceed clinical staging alone. Difference CI includes zero, though point estimate and resample proportion (96.4%) lean toward clinical outperforming."
+  },
+  "within_stage_analysis": {
+    "Stage I": {
+      "n": 256,
+      "events": 39,
+      "molecular_ci": 0.5207,
+      "molecular_ci_95CI": [
+        0.4004,
+        0.6446
+      ],
+      "clinical_age_gender_ci": 0.6266
+    },
+    "Stage II": {
+      "n": 112,
+      "events": 34,
+      "molecular_ci": 0.568,
+      "molecular_ci_95CI": [
+        0.4678,
+        0.6798
+      ],
+      "clinical_age_gender_ci": 0.4767
+    },
+    "Stage III": {
+      "n": 77,
+      "events": 35,
+      "molecular_ci": 0.6035,
+      "molecular_ci_95CI": [
+        0.4631,
+        0.733
+      ],
+      "clinical_age_gender_ci": 0.5925
+    },
+    "Stage IV": {
+      "n": 25,
+      "events": 11,
+      "molecular_ci": 0.7033,
+      "molecular_ci_95CI": [
+        0.4571,
+        0.9126
+      ],
+      "clinical_age_gender_ci": 0.7747
+    }
+  },
+  "within_stage_conclusion": "All within-stage molecular C-index bootstrap CIs include 0.5 \u2014 no stage group shows statistically defensible within-stage discrimination. This contradicts the prior in-sample estimate (0.888-0.890) reported before leakage correction.",
+  "gene_selection_stability": {
+    "n_fits": 50,
+    "gene_count_range": [
+      5,
+      149
+    ],
+    "gene_count_mean": 51.0,
+    "pairwise_jaccard_mean": 0.2152,
+    "pairwise_jaccard_median": 0.2254,
+    "genes_selected_in_50pct_or_more_fits": 25,
+    "total_unique_genes_ever_selected": 389,
+    "top_10_stable_genes": [
+      {
+        "gene": "HOXB9",
+        "fits_present": 46,
+        "pct": 92.0
+      },
+      {
+        "gene": "DKK1",
+        "fits_present": 45,
+        "pct": 90.0
+      },
+      {
+        "gene": "NLRP2",
+        "fits_present": 44,
+        "pct": 88.0
+      },
+      {
+        "gene": "NTS",
+        "fits_present": 42,
+        "pct": 84.0
+      },
+      {
+        "gene": "CLEC18A",
+        "fits_present": 39,
+        "pct": 78.0
+      },
+      {
+        "gene": "LTK",
+        "fits_present": 38,
+        "pct": 76.0
+      },
+      {
+        "gene": "C1QL2",
+        "fits_present": 37,
+        "pct": 74.0
+      },
+      {
+        "gene": "EREG",
+        "fits_present": 35,
+        "pct": 70.0
+      },
+      {
+        "gene": "IGFBP1",
+        "fits_present": 34,
+        "pct": 68.0
+      },
+      {
+        "gene": "C20orf114",
+        "fits_present": 34,
+        "pct": 68.0
+      }
+    ]
+  },
+  "ablation_scoreboard": {
+    "clinical_only_cox": 0.7036,
+    "clinical_only_gbm": 0.6773,
+    "expression_only_gbm": 0.6222,
+    "dysreg_only_gbm": 0.6013,
+    "immune_only_gbm": 0.4745,
+    "full_combined_gbm": 0.6462,
+    "coxnet_combined_tuned": 0.6487
+  },
+  "comparison_to_prior_leaky_results": {
+    "FINAL_primary_model_run_py_leaky": 0.693,
+    "NB11c_ensemble_leaky": 0.702,
+    "this_corrected_result": 0.6447,
+    "note": "Prior results used a globally-fixed 72-gene set (NB03 pickle) applied identically across all CV folds \u2014 genuine selection leakage. This notebook fixes that by re-selecting genes inside every fold."
+  },
+  "consensus_gene_signature": {
+    "description": "Genes selected in >=50% of the 50 repeated-CV fits \u2014 a stable candidate set, distinct from the full unstable per-fit selection",
+    "genes": [
+      "LTK",
+      "TMED7-TICAM2",
+      "SIX1",
+      "NCAM2",
+      "DKK1",
+      "MS4A1",
+      "BPIL1",
+      "CLEC18A",
+      "SPRR1B",
+      "HOXB9",
+      "EREG",
+      "C1QL2",
+      "NLRP2",
+      "NTS",
+      "TMEM139",
+      "IGFBP1",
+      "PKHD1L1",
+      "EPGN",
+      "KLK8",
+      "TMEM215",
+      "CRHR2",
+      "CNTN3",
+      "C20orf114",
+      "COMP",
+      "LY6K"
+    ]
+  }
+}
